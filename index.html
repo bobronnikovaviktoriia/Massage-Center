@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity Massage Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo">Serenity Massage</h2>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Relax. Refresh. Restore.</h1>
+        <p>Professional massage therapy for stress relief, wellness, and relaxation.</p>
+        <a href="#appointment" class="btn">Book Appointment</a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-text">
+        <h2>About Our Center</h2>
+        <p>
+          Serenity Massage Center is a relaxing space where clients can enjoy professional massage therapy
+          in a calm and comfortable environment. Our goal is to help every client feel better, reduce stress,
+          and improve overall wellness.
+        </p>
+      </div>
+      <img src="images/about-massage.jpg" alt="Relaxing massage room" />
+    </section>
+
+    <section class="section" id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/swedish-massage.jpg" alt="Swedish massage" />
+          <h3>Swedish Massage</h3>
+          <p>A gentle full-body massage for relaxation and stress relief.</p>
+          <span>$70 / 30 min</span>
+        </div>
+
+        <div class="service-card">
+          <img src="images/deep-tissue.jpg" alt="Deep tissue massage" />
+          <h3>Deep Tissue Massage</h3>
+          <p>Focused massage for muscle tension and deeper pressure.</p>
+          <span>$85 / 30 min</span>
+        </div>
+
+        <div class="service-card">
+          <img src="images/hot-stone.jpg" alt="Hot stone massage" />
+          <h3>Hot Stone Massage</h3>
+          <p>Warm stones help relax muscles and improve comfort.</p>
+          <span>$95 / 30 min</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="Spa candles" />
+        <img src="images/gallery2.jpg" alt="Massage room" />
+        <img src="images/gallery3.jpg" alt="Wellness spa" />
+        <img src="images/gallery4.jpg" alt="Relaxing spa" />
+      </div>
+    </section>
+
+    <section class="section appointment" id="appointment">
+      <h2 class="section-title">Book an Appointment</h2>
+      <p class="appointment-text">
+        Fill out the form below or use our Calendar booking link.
+      </p>
+
+      <div class="appointment-container">
+        <form id="appointmentForm" class="appointment-form">
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="email" id="email" placeholder="Your Email" />
+          <input type="tel" id="phone" placeholder="Your Phone" />
+
+          <select id="service">
+            <option value="">Choose Service</option>
+            <option value="Swedish Massage">Swedish Massage</option>
+            <option value="Deep Tissue Massage">Deep Tissue Massage</option>
+            <option value="Hot Stone Massage">Hot Stone Massage</option>
+          </select>
+
+          <input type="date" id="date" />
+          <button type="submit" class="btn">Submit Request</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+
+        <div class="calendar-box">
+          <h3>Prefer online booking?</h3>
+          <p>Click below to choose a time through Calendar.</p>
+
+          <a href="https://calendly.com/bobronnikovaviktoria/30min" target="_blank" class="btn calendar-btn">Book Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <p><strong>Phone:</strong> (425) 555-1234</p>
+      <p><strong>Email:</strong> info@serenitymassage.com</p>
+      <p><strong>Address:</strong> 123 Wellness Street, Seattle, WA</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Serenity Massage Center. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
